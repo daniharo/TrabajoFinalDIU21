@@ -139,7 +139,9 @@ En este paso se va a plantear un pequeño informe con algunos problemas que se h
 
 - En **dispositivos móviles** o con pantalla pequeña el diseño básicamente no funciona. Los elementos se desordenan y ni siquiera aparece el menú principal. La solución a esto sí que sería un rediseño total teniendo en cuenta las pautas de diseño *responsive*.
 
-  <img src="./Parte2/01_UsabilityReport/yuzin_movil.png" width="150">
+  <p align="center">
+    <img src="./Parte2/01_UsabilityReport/yuzin_movil.png" width="150" >
+  </p>
 
 ### Paso 2: UX Design
 
