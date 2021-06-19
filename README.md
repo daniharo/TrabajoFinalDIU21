@@ -202,6 +202,7 @@ Se ha usado el programa Adobe XD para realizar el *mockup*. En este se han inclu
 <p align="center">
   <img src="./Parte2/mockup.gif" alt="Mockup">
 </p>
+
 ### Conclusiones
 
 Por un lado, he descubierto que hacer un buen **[wireframe](#2b-wireframes)** al principio del proceso de diseño puede esclarecer las ideas en una etapa temprana, evitando desorden y adelantando la estructura del diseño.
