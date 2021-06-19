@@ -193,7 +193,9 @@ Se ha usado Adobe XD para realizar el Mockup. En este se han incluido las siguie
 
 - **Buscar**: Muestra todos los eventos y actividades disponibles, permitiendo al usuario seleccionar un filtrado o un orden personalizado.
 
-  ![Mockup](./Parte2/mockup.gif)
+<p align="center">
+  <img src="./Parte2/mockup.gif" alt="Mockup">
+</p>
 
 ### Conclusiones
 
