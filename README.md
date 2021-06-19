@@ -181,11 +181,17 @@ Se usan dos tipografías:
 
 ##### Patrones de diseño
 
-
+- Como encabezado, se usa una [App Bar](https://material.io/components/app-bars-top) personalizada de forma que se mantiene siempre visible la imagen de marca de la plataforma, con su logotipo.
+- Para introducir usuario y contraseña se utiliza el patrón [Text Field](https://material.io/components/text-fields).
+- Para seleccionar la parte de la aplicación que nos interesa (inicio, acceder y buscar) se utiliza el patrón [Bottom Navigation Bar](https://material.io/components/bottom-navigation).
+- Para disparar acciones en la app, tales como ordenar, filtrar o comprar, se utiliza el patrón [Buttons](https://material.io/components/buttons), con el tipo **Contained button** en el caso de ordenar y filtrar y el tipo **Floating Action Button** en el caso de la compra.
+- Para seleccionar el filtrado de eventos se utiliza el patrón [Dialogs](https://www.material.io/components/dialog).
+- Para seleccionar el orden de los eventos se utiliza el patrón [Menu](https://material.io/components/menus), con el tipo [Dropdown Menu](https://material.io/components/menus#dropdown-menu).
+- Para mostrar cada evento se utiliza el patrón [Cards](https://material.io/components/cards). Cada tarjeta *«tiene contenido y acciones respecto a un único asunto»*. En nuestro caso cada tarjeta representa un evento, y como acción introducimos la compra. 
 
 #### 3.c Mockup
 
-Se ha usado Adobe XD para realizar el Mockup. En este se han incluido las siguientes páginas:
+Se ha usado el programa Adobe XD para realizar el *mockup*. En este se han incluido las siguientes páginas:
 
 - **Inicio**: Muestra algunos eventos destacados, ya sea porque han sido promocionados o porque se han publicado recientemente.
 
@@ -196,7 +202,10 @@ Se ha usado Adobe XD para realizar el Mockup. En este se han incluido las siguie
 <p align="center">
   <img src="./Parte2/mockup.gif" alt="Mockup">
 </p>
-
 ### Conclusiones
 
-Conveniencia del trabajo en equipo
+Por un lado, he descubierto que hacer un buen **[wireframe](#2b-wireframes)** al principio del proceso de diseño puede esclarecer las ideas en una etapa temprana, evitando desorden y adelantando la estructura del diseño.
+
+Por otro lado y como colofón, durante la realización de este trabajo final he podido comprobar la diferencia entre realizar un trabajo de estas características de manera individual y **en equipo**. 
+
+En las prácticas de la asignatura se realizó un trabajo parecido, pero sin duda cuando entre los miembros del equipo (aunque sean solo dos personas) se **dividen tareas**, se **aportan diferentes ideas**, se **debaten opciones** y por tanto se **suma creatividad**, el trabajo se hace mucho más llevadero e interesante; especialmente si ambos miembros del equipo tienen el mismo gran interés por la asignatura.
