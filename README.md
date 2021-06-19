@@ -185,7 +185,15 @@ Se usan dos tipografías:
 
 #### 3.c Mockup
 
-Se ha usado Adobe XD para realizar el Mockup.
+Se ha usado Adobe XD para realizar el Mockup. En este se han incluido las siguientes páginas:
+
+- **Inicio**: Muestra algunos eventos destacados, ya sea porque han sido promocionados o porque se han publicado recientemente.
+
+- **Acceder**: Permite al usuario acceder con su usuario y contraseña, o pulsar en "Inscribirme" para acceder a la web de inscripción como socio.
+
+- **Buscar**: Muestra todos los eventos y actividades disponibles, permitiendo al usuario seleccionar un filtrado o un orden personalizado.
+
+  ![Mockup](./Parte2/mockup.gif)
 
 ### Conclusiones
 
