@@ -115,7 +115,7 @@ En este paso se va a plantear un pequeño informe con algunos problemas que se h
 
   <img src="./Parte2/01_UsabilityReport/contrast_ratio_slide1.png" style="zoom:50%;" />
 
-  Podemos ver que su *contrast ratio* es 1.61, y el mínimo para cumplir el estándar WCAG AA es de 3 para texto grande[^contrast]. Una solución posible sería darle más sombra al texto, o directamente hacer que este texto sea negro. En la imagen del siguiente apartado se muestra la primera solución.
+  Podemos ver que su *contrast ratio* es 1.61, y el mínimo para cumplir el estándar WCAG AA es de [3 para texto grande](https://webaim.org/resources/contrastchecker/). Una solución posible sería darle más sombra al texto, o directamente hacer que este texto sea negro. En la imagen del siguiente apartado se muestra la primera solución.
 
 - El **botón principal** de los slides **no está resaltado**. Por el [Efecto Von Restorff](https://lawsofux.com/von-restorff-effect/), sabemos que las acciones clave deben ser distinguidas visualmente. Una solución posible para resaltar este botón sería darle un color de fondo uniforme y más peso al texto interior.
 
@@ -139,9 +139,11 @@ En este paso se va a plantear un pequeño informe con algunos problemas que se h
 
 - En **dispositivos móviles** o con pantalla pequeña el diseño básicamente no funciona. Los elementos se desordenan y ni siquiera aparece el menú principal. La solución a esto sí que sería un rediseño total teniendo en cuenta las pautas de diseño *responsive*.
 
-  <img src="./Parte2/01_UsabilityReport/yuzin_movil.png" alt="Diseño en móvil" style="width: 200px;"/>
+  <img src="./Parte2/01_UsabilityReport/yuzin_movil.png" width="150">
 
 ### Paso 2: UX Design
+
+Se va a realizar el diseño de un 
 
 #### 2.a ScopeCanvas
 
@@ -157,5 +159,5 @@ En este paso se va a plantear un pequeño informe con algunos problemas que se h
 
 ### Conclusiones
 
-[^contrast]: [WebAIM: Contrast Checker](https://webaim.org/resources/contrastchecker/)
+
 
