@@ -151,9 +151,15 @@ Se va a realizar el planteamiento del rediseño de la aplicación Yuzin para mó
 
 ### Paso 3: Mi UX-Case Study (diseño)
 
+En este paso se va a analizar la identidad de marca de la plataforma mediante un [Moodboard](#3a-moodboard), que luego trasladaremos a un diseño más concreto de la nueva aplicación móvil: el [Mockup](#3c-mockup). En el apartado de [Guidelines](#3b-guidelines) analizaremos qué elementos de diseño se utilizarán en el mockup, como tipografías, colores...
+
 #### 3.a Moodboard
 
+![Moodboard](./Parte2/moodboard.png)
+
 #### 3.b Guidelines
+
+
 
 #### 3.c Mockup
 
