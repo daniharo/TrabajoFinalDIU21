@@ -145,7 +145,7 @@ En este paso se va a plantear un pequeño informe con algunos problemas que se h
 
 ### Paso 2: UX Design
 
-Se va a realizar el planteamiento del rediseño de la aplicación Yuzin para móviles. Para ello primero se realizará un **[ScopeCanvas](#2.a-ScopeCanvas)** analizando las necesidades de los usuarios y los objetivos que pretendemos conseguir, y después haremos un boceto de la aplicación (**[Wireframes](#2.b-Wireframes)**).
+Se va a realizar el planteamiento del rediseño de la aplicación Yuzin para móviles. Para ello primero se realizará un **[ScopeCanvas](#2a-scopecanvas)** analizando las necesidades de los usuarios y los objetivos que pretendemos conseguir, y después haremos un boceto de la aplicación (**[Wireframes](#2b-wireframes)**).
 
 #### 2.a ScopeCanvas
 
