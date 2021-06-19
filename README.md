@@ -40,11 +40,11 @@ En el ámbito de las **prácticas**:
 
   En este desarrollo apliqué varios de los conocimientos aprendidos en esta asignatura, entre ellos:
 
-  - Separación entre los distintos tipos de información.
+  - **Separación** entre los distintos tipos de información.
   - Uso de `max-width` en el formulario para que si el usuario utiliza una **pantalla grande** no tenga que estar constantemente cambiando el foco de su vista de izquierda a derecha. Hay que tener en cuenta **todos los tipos de pantalla**.
   - Uso del pseudoselector CSS `:hover` en todos los enlaces y botones, de manera que cuando el usuario pasa su cursor sobre cualquier botón o enlace la página **reacciona** cambiando el color del fondo de ese elemento. Los diseños deben ser **reactivos** a las acciones de un usuario.
 
-- Por otro lado, en la asignatura **Desarrollo de Software**, desarrollé una aplicación móvil basada también en Material Design. Su temática es la gestión de la docencia de un profesor:
+- Por otro lado, en la asignatura **Desarrollo de Software**, desarrollé una aplicación móvil basada también en el guideline Material Design. Su temática es la gestión de la docencia de un profesor:
 
   | Modo claro                                | Modo oscuro                                 | Ejemplo de uso                         |
   | ----------------------------------------- | ------------------------------------------- | -------------------------------------- |
@@ -52,14 +52,66 @@ En el ámbito de las **prácticas**:
 
   Entre los conocimientos de interfaces de usuario aplicados en este proyecto destacan:
 
-  - Se implementó tanto un tema claro como un tema oscuro, para cumplir con las diferentes preferencias de los usuarios.
+  - Se implementó tanto un tema claro como un tema oscuro, para cumplir con las diferentes **preferencias** de los usuarios.
 
-  - Se usaron patrones UI como [Bottom Navigation Bar](https://material.io/components/bottom-navigation), [App Bar](https://material.io/components/app-bars-top) o [Floating action button](https://material.io/components/buttons-floating-action-button).
-  - Añadí validación de todos los campos de los formularios y mensajes de error semánticos: el usuario debe saber **qué** ha introducido erróneamente y **cómo** solucionarlo.
-  - A la hora de eliminar un registro, se pide siempre una confirmación, y en esa confirmación la acción *Cancelar* está resaltada por defecto, de forma que el usuario no elimine erróneamente registros.
-  - Siempre que se modifican o se añaden correctamente registros, se muestra un mensaje en forma de [Snackbar](https://material.io/components/snackbars) para informar al usuario de que la acción que nos requirió se ha completado. Esto ayuda a que el usuario sepa en todo momento durante su experiencia qué está ocurriendo o ha ocurrido.
+  - Se usaron **patrones** UI como [Bottom Navigation Bar](https://material.io/components/bottom-navigation), [App Bar](https://material.io/components/app-bars-top) o [Floating Action Button](https://material.io/components/buttons-floating-action-button).
+  - Añadí validación de todos los campos de los formularios y mensajes de error semánticos: el usuario debe saber **qué** ha introducido erróneamente y **cómo** solucionarlo: **[Ley de Postel](https://lawsofux.com/postels-law/)**
+  - A la hora de eliminar un registro, se pide siempre una **confirmación**, y en esa confirmación la acción *Cancelar* está resaltada por defecto, de forma que el usuario no elimine erróneamente registros.
+  - Siempre que se modifican o se añaden correctamente registros, se muestra un **mensaje** en forma de [Snackbar](https://material.io/components/snackbars) para **informar** al usuario de que la acción que nos requirió se ha completado. Esto ayuda a que el usuario sepa en todo momento durante su experiencia qué está ocurriendo o ha ocurrido.
 
 ------
 
 ## 💻 Parte 2: Caso de estudio. Web YUZIN
 
+### Descripción del caso de estudio
+
+Sobre **Yuzin**, y tal y como se puede leer en su [web](https://yuzin.com/quienes-somos/):
+
+> **Yuzin Club Cultural** es una plataforma de divulgación y promoción de contenidos culturales que combina **agenda cultural** con **marketplace** de venta de entradas para espectáculos. Además también somos un **club cultural** al que puedes asociarte para beneficiarte de descuentos y actividades exclusivas.
+
+Antes de empezar el análisis, debemos tener claros los propósitos que persigue esta plataforma. Podemos ver que se resumen en cuatro apartados:
+
+- **Agenda cultural**: se trata de una lista o tabla de eventos y lugares culturales en Granada.
+- **Venta de entradas**: relacionado con el apartado anterior: en los eventos de pago, la plataforma ofrece la posibilidad de comprar la entrada y hacer el pago sin salirse de la web.
+- **Club cultural**: los asociados pueden obtener entradas a un precio más bajo.
+- **Revista**: ha quedado relegada a un segundo plano.
+
+### Metodología a usar
+
+Dado que se parte de un diseño ya existente, primero se va a realizar un Usability Report del diseño actual, y después, por pasos, se hará un rediseño desde 0. El rediseño se propone como app móvil, ya que —como se verá en el usability report— aunque el diseño actual sea mejorable, estimo más interesante proponer un diseño orientado a los usuarios móviles.
+
+### Paso 1: Usability Report
+
+- tarda mucho en cargar
+
+- en página principal hay texto que se sale de los slides
+
+- poco contraste en slides
+
+- Existe muy poca **diferenciación** o contraste entre la **barra superior** y el contenido de la web. La mejora propuesta consiste en hacer que el color de fondo de toda la barra superior sea uniforme, de forma que esta quede **resaltada**:
+
+  <img src="./Parte2/01_UsabilityReport/mejora_barra_superior.png" alt="Mejora de la barra superior" style="zoom: 50%;" />
+
+  Hemos cumplido la [Ley de Jakob](https://lawsofux.com/jakobs-law/): solo con este pequeño cambio, la página ya resulta más coherente con el resto de páginas que solemos visitar, que suelen resaltar la barra superior. Además hemos conseguido que el usuario perciba el encabezado como un único grupo: [Law of Common Region](https://lawsofux.com/law-of-common-region/).
+
+- Sería también conveniente que al menos la parte principal de la **barra superior** (opciones) se quede **fija** en la pantalla aunque hagamos *scroll*. De este modo, el usuario puede acceder a los demás apartados principales de la página sin hacer scroll hasta el principio:
+
+  La distancia entre el área de atención del usuario y el botón 
+
+  distance between a user’s task/attention area and the task-related button should be kept as short as possible
+
+### Paso 2: UX Design
+
+#### 2.a ScopeCanvas
+
+#### 2.b Wireframes
+
+### Paso 3: Mi UX-Case Study (diseño)
+
+#### 3.a Moodboard
+
+#### 3.b Guidelines
+
+#### 3.c Mockup
+
+### Conclusiones
