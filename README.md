@@ -149,7 +149,11 @@ Se va a realizar el planteamiento del rediseño de la aplicación Yuzin para mó
 
 #### 2.a ScopeCanvas
 
+![Scope Canvas](./Parte2/scope_canvas.png)
+
 #### 2.b Wireframes
+
+![Wireframe](./Parte2/wireframe.jpg)
 
 ### Paso 3: Mi UX-Case Study (diseño)
 
@@ -161,5 +165,4 @@ Se va a realizar el planteamiento del rediseño de la aplicación Yuzin para mó
 
 ### Conclusiones
 
-
-
+Conveniencia del trabajo en equipo
