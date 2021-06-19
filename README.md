@@ -3,6 +3,12 @@
 
 Autor: Daniel Haro Contreras
 
+
+
+[TOC]
+
+
+
 ## 🙍‍♂️ Parte 1: Mi experiencia UX
 
 A la hora de usar un ordenador, es habitual percibir que algunos servicios resultan más «difíciles» o menos intuitivos de usar que otros. Aunque ese «percibir» es algo casi siempre subjetivo, hay unos motivos que subyacen para que exista una diferencia entre distintos servicios. En esta asignatura se han aprendido los diversos factores críticos que hacen que nuestra aplicación pueda ser, además de *funcional*, **usable** y **accesible**. Al fin y al cabo, todo se resume en que a la hora de desarrollar la interfaz entre una máquina y las personas, tengamos en cuenta precisamente eso: que estamos **comunicándonos** con una persona, y por tanto tenemos que tener en un primer plano a las personas: su comportamiento, psicología, preferencias, miedos, habilidades, dificultades; en definitiva: su **experiencia**.
@@ -30,8 +36,8 @@ En el ámbito de las **prácticas**:
 
 - En la asignatura de **Sistemas de Información Basados en Web**, diseñé una web completa en la que consultar y gestionar eventos musicales de Granada:
 
-  | Página principal                                | Información de un evento                    | Edición de un evento                     |
-  | ----------------------------------------------- | ------------------------------------------- | ---------------------------------------- |
+  |                Página principal                 |          Información de un evento           |           Edición de un evento           |
+  | :---------------------------------------------: | :-----------------------------------------: | :--------------------------------------: |
   | ![Página principal](./Parte1/sibwprincipal.png) | ![Información de evento](./Parte1/sibw.png) | ![Edición de evento](./Parte1/sibw2.png) |
 
   
@@ -46,8 +52,8 @@ En el ámbito de las **prácticas**:
 
 - Por otro lado, en la asignatura **Desarrollo de Software**, desarrollé una aplicación móvil basada también en el guideline Material Design. Su temática es la gestión de la docencia de un profesor:
 
-  | Modo claro                                | Modo oscuro                                 | Ejemplo de uso                         |
-  | ----------------------------------------- | ------------------------------------------- | -------------------------------------- |
+  |                Modo claro                 |                 Modo oscuro                 |             Ejemplo de uso             |
+  | :---------------------------------------: | :-----------------------------------------: | :------------------------------------: |
   | ![Modo claro](./Parte1/ds_modo_claro.jpg) | ![Modo oscuro](./Parte1/ds_modo_oscuro.jpg) | ![Ejemplo de uso](./Parte1/ds_gif.gif) |
 
   Entre los conocimientos de interfaces de usuario aplicados en este proyecto destacan:
@@ -74,31 +80,58 @@ Antes de empezar el análisis, debemos tener claros los propósitos que persigue
 - **Agenda cultural**: se trata de una lista o tabla de eventos y lugares culturales en Granada.
 - **Venta de entradas**: relacionado con el apartado anterior: en los eventos de pago, la plataforma ofrece la posibilidad de comprar la entrada y hacer el pago sin salirse de la web.
 - **Club cultural**: los asociados pueden obtener entradas a un precio más bajo.
-- **Revista**: ha quedado relegada a un segundo plano.
+- **Revista**: ha quedado relegada a un segundo plano, y recoge la agenda cultural de cada mes.
+
+En la actualidad, la web luce de la siguiente forma:
+
+<img src="./Parte2/yuzin_disenyo_actual.png" alt="Diseño actual Yuzin" style="width:75%;"  id="estado-actual" />
 
 ### Metodología a usar
 
-Dado que se parte de un diseño ya existente, primero se va a realizar un Usability Report del diseño actual, y después, por pasos, se hará un rediseño desde 0. El rediseño se propone como app móvil, ya que —como se verá en el usability report— aunque el diseño actual sea mejorable, estimo más interesante proponer un diseño orientado a los usuarios móviles.
+Dado que se parte de un diseño ya existente, primero se va a realizar un Usability Report del diseño actual para plantear posibles mejoras sin empezar desde cero, y después, por pasos, se hará un rediseño desde 0. El rediseño se propone como app móvil, ya que —como se verá en el usability report— aunque el diseño actual sea mejorable, estimo más interesante proponer un diseño totalmente distinto orientado a los usuarios móviles.
 
 ### Paso 1: Usability Report
 
-- tarda mucho en cargar
+En este paso se va a plantear un pequeño informe con algunos problemas que se han detectado en el diseño actual y sus posibles soluciones.
 
-- en página principal hay texto que se sale de los slides
+- El **tiempo de respuesta** del servidor es de entre 1.2s y 1.8s en las pruebas que se han realizado:
 
-- poco contraste en slides
+  | ![](./Parte2/01_UsabilityReport/tiempo_respuesta1.png) | ![](./Parte2/01_UsabilityReport/tiempo_respuesta2.png) | ![](./Parte2/01_UsabilityReport/tiempo_respuesta3.png) |
+  | ------------------------------------------------------ | ------------------------------------------------------ | ------------------------------------------------------ |
+
+  Siempre **superan 1s**, límite después del cual las personas perdemos el hilo de pensamiento ([**Jakob Nielsen - Response Time Limits**](https://www.nngroup.com/articles/response-times-3-important-limits/)). Por tanto, mientras navegamos por esta web es normal que las esperas nos hagan perder el flujo, aumentando la posibilidad de que el usuario salga de la plataforma.
+
+  La plataforma debería revisar la configuración de su servidor, incluyendo la lógica de back-end o la ubicación del hosting, para solucionar este problema.
+
+- Tal y como se puede ver en la [imagen de arriba](#estado-actual), los *slides* de la página principal manifiestan algunos problemas. Uno de ellos es que el **texto** a veces **no cabe** en el ancho que tiene especificado, por lo que se sale del contenedor hacia abajo. Esto tiene una fácil solución: en el CSS, el selector `.et_pb_fullwidth_slider_0 .et_pb_slide>.et_pb_container` debería incluir el atributo `width: 100%`, y no `width: 45%`:
+
+  |                 Cambio CSS                 |                        Nuevo aspecto                         |
+  | :----------------------------------------: | :----------------------------------------------------------: |
+  | ![](./Parte2/01_UsabilityReport/ancho.png) | <img src="./Parte2/01_UsabilityReport/ancho_aspecto.png" style="zoom: 33%;" /> |
+
+  
+
+- El **contraste** entre el texto de los *slides* y el color o imagen de fondo no cumple los estándares de accesibilidad:
+
+  <img src="./Parte2/01_UsabilityReport/contrast_ratio_slide1.png" style="zoom:50%;" />
+
+  Podemos ver que su *contrast ratio* es 1.61, y el mínimo para cumplir el estándar WCAG AA es de 3 para texto grande. Una solución posible sería darle más sombra al texto, o directamente hacer que este texto sea negro. En la imagen del siguiente apartado se muestra la primera solución.
+
+- El **botón principal** de los slides **no está resaltado**. Por el [Efecto Von Restorff](https://lawsofux.com/von-restorff-effect/), sabemos que las acciones clave deben ser distinguidas visualmente. Una solución posible para resaltar este botón sería darle un color de fondo uniforme y más peso al texto interior.
+
+  <img src="./Parte2/01_UsabilityReport/contraste_solucionado.png" style="zoom:50%;" />
+
+  
 
 - Existe muy poca **diferenciación** o contraste entre la **barra superior** y el contenido de la web. La mejora propuesta consiste en hacer que el color de fondo de toda la barra superior sea uniforme, de forma que esta quede **resaltada**:
 
-  <img src="./Parte2/01_UsabilityReport/mejora_barra_superior.png" alt="Mejora de la barra superior" style="zoom: 50%;" />
+  <img src="./Parte2/01_UsabilityReport/mejora_barra_superior.png" alt="Mejora de la barra superior" style="zoom: 50%;"/>
 
   Hemos cumplido la [Ley de Jakob](https://lawsofux.com/jakobs-law/): solo con este pequeño cambio, la página ya resulta más coherente con el resto de páginas que solemos visitar, que suelen resaltar la barra superior. Además hemos conseguido que el usuario perciba el encabezado como un único grupo: [Law of Common Region](https://lawsofux.com/law-of-common-region/).
 
-- Sería también conveniente que al menos la parte principal de la **barra superior** (opciones) se quede **fija** en la pantalla aunque hagamos *scroll*. De este modo, el usuario puede acceder a los demás apartados principales de la página sin hacer scroll hasta el principio:
+- Sería también conveniente que al menos la parte principal de la **barra superior** (opciones) se quede **fija** en la pantalla aunque hagamos *scroll*. De este modo, el usuario puede acceder a los demás apartados principales de la página sin hacer scroll hasta el principio, teniendo en cuenta la [Ley de Fitt](https://lawsofux.com/fittss-law/) y siendo una de las tareas principales del usuario el moverse entre secciones:
 
-  La distancia entre el área de atención del usuario y el botón 
-
-  distance between a user’s task/attention area and the task-related button should be kept as short as possible
+  > La distancia entre el área de atención del usuario y el botón para realizar la tarea debe ser lo más corta posible
 
 ### Paso 2: UX Design
 
@@ -115,3 +148,4 @@ Dado que se parte de un diseño ya existente, primero se va a realizar un Usabil
 #### 3.c Mockup
 
 ### Conclusiones
+
