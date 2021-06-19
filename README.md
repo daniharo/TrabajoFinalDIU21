@@ -176,8 +176,8 @@ Se usan dos tipografías:
 - **Kadwa**: por su similaridad con la usada en el logotipo de la marca, y para marcar un contraste con los demás elementos de la aplicación, que usarán fuente sin serifas. Esta es una fuente con serifas.
 - **Roboto**: para dar homogeneidad con el resto del sistema y de aplicaciones del entorno Android, que se basan en esta tipografía.
 
-| ![Tipografía Kadwa](./Parte2/kadwa.png)![Tipografía Roboto](./Parte2/roboto.png) |      |
-| :----------------------------------------------------------: | ---- |
+| ![Tipografía Kadwa](./Parte2/kadwa.png) | ![Tipografía Roboto](./Parte2/roboto.png) |
+| :-------------------------------------: | ----------------------------------------- |
 
 ##### Patrones de diseño
 
