@@ -159,9 +159,33 @@ En este paso se va a analizar la identidad de marca de la plataforma mediante un
 
 #### 3.b Guidelines
 
+##### Guía de estilo
+
+Al igual que en las prácticas, la guía de estilo utilizada es **[Material Design](https://material.io/design)**, por ser el estándar para la mayoría de apps móviles que se desarrollan para Android hoy en día. Proporciona numerosos componentes y patrones de diseño que encajan perfectamente en cualquier app Android.
+
+##### Paleta de colores
+
+![Paleta de colores](./Parte2/paleta_colores.png)
+
+Se ha utilizado la herramienta [Adobe Colors](https://color.adobe.com/es/create) para crear una paleta de colores monocromática a partir del color principal de la marca, presente en el logotipo (#FDC300). Dado que la diversidad de colores que se expondrán en los eventos disponibles en la aplicación será muy amplia, se ha decidido usar una paleta monocromática para resaltar la identidad de la marca en las partes que no dependen de los eventos publicados.
+
+##### Tipografía
+
+Se usan dos tipografías:
+
+- **Kadwa**: por su similaridad con la usada en el logotipo de la marca, y para marcar un contraste con los demás elementos de la aplicación, que usarán fuente sin serifas. Esta es una fuente con serifas.
+- **Roboto**: para dar homogeneidad con el resto del sistema y de aplicaciones del entorno Android, que se basan en esta tipografía.
+
+| ![Tipografía Kadwa](./Parte2/kadwa.png)![Tipografía Roboto](./Parte2/roboto.png) |      |
+| :----------------------------------------------------------: | ---- |
+
+##### Patrones de diseño
+
 
 
 #### 3.c Mockup
+
+Se ha usado Adobe XD para realizar el Mockup.
 
 ### Conclusiones
 
